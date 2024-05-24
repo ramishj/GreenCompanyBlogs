@@ -1,0 +1,101 @@
+.homepage {
+  background-image: url('../assets/Quran_BG.jpg'); /* Background image for the box */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative; /* Needed for the pseudo-element */
+  z-index: 1; /* Ensure it's above the pseudo-element */
+}
+
+.homepage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better readability */
+  z-index: -1; /* Ensure it's below the content */
+}
+
+.content-box {
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
+ 
+  width: 80%; /* 80% width of the viewport */
+  max-width: 80%; /* Maximum width for the box */
+  padding: 20px;
+  height: 80%;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;
+  z-index: 2; /* Ensure content box is above the background */
+}
+
+.content-box .ayah {
+  font-size: 3em; /* Larger font size for Ayah */
+  color: #ffffff; /* White text color */
+  margin-bottom: 20px; /* Add some space between Ayah and translation */
+}
+
+.content-box .translation {
+  font-size: 1.5em; /* Font size for translation */
+  color: #000000; /* Black text color */
+  font-weight: bold; /* Make translation very bold */
+}
+
+.content-ayah {
+  padding: 5% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-statement {
+  padding-top: 12%;
+  padding-bottom: 2%;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 1.3em;
+  font-family: "Montserrat";
+  font-weight: bold; /* Make the text bold */
+}
+
+.mission-statement2 {
+  width: 100%;
+  text-align: left;
+  font-size: 2em;
+  font-family: "Phetsarath";
+  font-weight: bold; /* Make the text bold */
+}
+
+.blue-text {
+  color: #0d76d7;
+}
+
+.learn-more-btn {
+  margin-top: auto; /* Automatically adjust margin to push the button to the bottom */
+  margin-bottom: 20px; /* Add some extra margin to create spacing between the button and the content */
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: white;
+  color: black;
+  border-color: #000000;
+}

@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #ffffff; /* White background for the navbar */
+    border: 2px solid #000; /* Black border */
+    display: flex;
+    justify-content: center;
+    padding: 30px 0; /* Increased padding for top and bottom */
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-item {
+    margin: 0 15px; /* Increased margin */
+  }
+  
+  .navbar-item a {
+    color: #333; /* Link color */
+    text-decoration: none;
+    font-size: 18px; /* Increased font size */
+    transition: color 0.3s; /* Smooth transition for color change */
+    padding: 10px 20px; /* Added padding around text */
+    border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 20px; /* Border radius */
+  }
+  
+  .navbar-item a:hover {
+    background-color: #ccc; /* Light gray background on hover */
+    color: white; /* Text color on hover */
+    border-color: #333; /* Border color on hover */
+  }
+  

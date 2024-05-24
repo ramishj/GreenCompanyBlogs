@@ -1,0 +1,98 @@
+/* src/BlogsAndArticles.css */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .App {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .blogs-and-articles {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center;
+  }
+  
+  .header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header .underline {
+    width: 60%;
+    height: 2px;
+    background-color: black;
+    margin: 3% auto; /* Center the underline */
+    margin-bottom: 3%;
+  }
+  
+  .header h2 {
+    margin: 0;
+    font-size: 2em;
+  }
+  
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+   
+
+  }
+  
+  .article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+    text-align: left; /* Align content to the left */
+  }
+  
+  .article img {
+    width: 15%; /* Make the image fill the container */
+    border-radius: 8px; /* Add some border radius */
+    margin-bottom: 10px; /* Add some space below the image */
+
+  }
+  
+  .article h3 {
+    margin-top: 0;
+  }
+  
+  .article p {
+    margin: 10px 0;
+  }
+  
+  .learn-more-btn {
+    margin-top: auto; /* Automatically adjust margin to push the button to the bottom */
+    margin-bottom: 0; /* Remove margin from the bottom */
+    padding: 10px 20px;
+    background-color: #0d76d7; /* Blue background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ensure button takes full width */
+    width: 100%; /* Ensure button takes full width */
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #095c99; /* Darker shade of blue on hover */
+  }
+  
