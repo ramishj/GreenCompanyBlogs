@@ -1,36 +1,47 @@
 .navbar {
-    background-color: #ffffff; /* White background for the navbar */
-    border: 2px solid #000; /* Black border */
-    display: flex;
-    justify-content: center;
-    padding: 30px 0; /* Increased padding for top and bottom */
-  }
-  
-  .navbar-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  
+  background-color: #ffffff; /* White background for the navbar */
+  border: 2px solid #000; /* Black border */
+  display: flex;
+  justify-content: center;
+  padding: 20px 0; /* Adjusted padding for top and bottom */
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item {
+  margin: 0 10px; /* Adjusted margin */
+}
+
+.navbar-item a {
+  color: #333; /* Link color */
+  text-decoration: none;
+  font-size: 16px; /* Adjusted font size */
+  transition: color 0.3s; /* Smooth transition for color change */
+  padding: 8px 16px; /* Adjusted padding around text */
+  border: 2px solid transparent; /* Transparent border initially */
+  border-radius: 20px; /* Border radius */
+}
+
+.navbar-item a:hover {
+  background-color: #ccc; /* Light gray background on hover */
+  color: white; /* Text color on hover */
+  border-color: #333; /* Border color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
   .navbar-item {
-    margin: 0 15px; /* Increased margin */
+    margin: 0 5px; /* Further reduced margin */
   }
-  
+
   .navbar-item a {
-    color: #333; /* Link color */
-    text-decoration: none;
-    font-size: 18px; /* Increased font size */
-    transition: color 0.3s; /* Smooth transition for color change */
-    padding: 10px 20px; /* Added padding around text */
-    border: 2px solid transparent; /* Transparent border initially */
-    border-radius: 20px; /* Border radius */
+    font-size: 14px; /* Further reduced font size */
+    padding: 6px 12px; /* Further reduced padding */
   }
-  
-  .navbar-item a:hover {
-    background-color: #ccc; /* Light gray background on hover */
-    color: white; /* Text color on hover */
-    border-color: #333; /* Border color on hover */
-  }
-  
+}

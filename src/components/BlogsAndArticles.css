@@ -1,98 +1,80 @@
-/* src/BlogsAndArticles.css */
-html, body, #root {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .App {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .blogs-and-articles {
-    height: 100%;
-    width: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+/* Default styles */
+.blogs-and-articles {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header .underline {
+  width: 50px;
+  height: 2px;
+  background-color: #0d76d7;
+  margin: 0 auto 20px auto;
+}
+
+.header .blue-text {
+  font-size: 1.5em;
+  color: #0d76d7;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.article {
+  width: 90%;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.article img {
+  width: 100%;
+  max-width: 50px; /* Set maximum width for the image */
+  border-radius: 5px;
+}
+
+.article h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.article p {
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+.learn-more-btn {
+  background-color: #0d76d7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .article {
+    width: 48%; /* Two articles in a row on desktop */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content at the top */
-    align-items: center;
+    align-items: flex-start; /* Align items to the start (left) */
   }
-  
-  .header {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
-  
-  .header .underline {
-    width: 60%;
-    height: 2px;
-    background-color: black;
-    margin: 3% auto; /* Center the underline */
-    margin-bottom: 3%;
-  }
-  
-  .header h2 {
-    margin: 0;
-    font-size: 2em;
-  }
-  
-  .articles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    width: 80%;
-   
 
-  }
-  
-  .article {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: calc(50% - 20px);
-    box-sizing: border-box;
-    text-align: left; /* Align content to the left */
-  }
-  
   .article img {
-    width: 15%; /* Make the image fill the container */
-    border-radius: 8px; /* Add some border radius */
-    margin-bottom: 10px; /* Add some space below the image */
+    max-width: 30%; /* Adjust maximum width for desktop */
+    margin-bottom: 10px; /* Add margin to separate image from text */
+  }
 
-  }
-  
-  .article h3 {
-    margin-top: 0;
-  }
-  
+  .article h3,
   .article p {
-    margin: 10px 0;
+    text-align: left; /* Align text content to the left */
   }
-  
-  .learn-more-btn {
-    margin-top: auto; /* Automatically adjust margin to push the button to the bottom */
-    margin-bottom: 0; /* Remove margin from the bottom */
-    padding: 10px 20px;
-    background-color: #0d76d7; /* Blue background color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: block; /* Ensure button takes full width */
-    width: 100%; /* Ensure button takes full width */
-  }
-  
-  .learn-more-btn:hover {
-    background-color: #095c99; /* Darker shade of blue on hover */
-  }
-  
+}

@@ -1,4 +1,3 @@
-// src/BlogsAndArticles.js
 import React from 'react';
 import './BlogsAndArticles.css';
 

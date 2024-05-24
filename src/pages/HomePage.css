@@ -1,14 +1,14 @@
+/* Common styles for both desktop and mobile */
 .homepage {
-  background-image: url('../assets/Quran_BG.jpg'); /* Background image for the box */
+  background-image: url('../assets/Quran_BG.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  position: relative; /* Needed for the pseudo-element */
-  z-index: 1; /* Ensure it's above the pseudo-element */
+  position: relative;
+  z-index: 1;
 }
 
 .homepage::before {
@@ -18,44 +18,34 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better readability */
-  z-index: -1; /* Ensure it's below the content */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
 }
 
 .content-box {
-  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent white background */
- 
-  width: 80%; /* 80% width of the viewport */
-  max-width: 80%; /* Maximum width for the box */
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 80%;
+  max-width: 80%;
   padding: 20px;
-  height: 80%;
   border-radius: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content at the top */
+  justify-content: flex-start;
   align-items: center;
-  z-index: 2; /* Ensure content box is above the background */
+  z-index: 2;
 }
 
 .content-box .ayah {
-  font-size: 3em; /* Larger font size for Ayah */
-  color: #ffffff; /* White text color */
-  margin-bottom: 20px; /* Add some space between Ayah and translation */
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .content-box .translation {
-  font-size: 1.5em; /* Font size for translation */
-  color: #000000; /* Black text color */
-  font-weight: bold; /* Make translation very bold */
-}
-
-.content-ayah {
-  padding: 5% 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.5em;
+  color: #000000;
+  font-weight: bold;
 }
 
 .mission-statement {
@@ -66,7 +56,7 @@
   margin-top: 20px;
   font-size: 1.3em;
   font-family: "Montserrat";
-  font-weight: bold; /* Make the text bold */
+  font-weight: bold;
 }
 
 .mission-statement2 {
@@ -74,7 +64,8 @@
   text-align: left;
   font-size: 2em;
   font-family: "Phetsarath";
-  font-weight: bold; /* Make the text bold */
+  font-weight: bold;
+  margin-bottom: 20px; /* Add margin bottom for space */
 }
 
 .blue-text {
@@ -82,8 +73,8 @@
 }
 
 .learn-more-btn {
-  margin-top: auto; /* Automatically adjust margin to push the button to the bottom */
-  margin-bottom: 20px; /* Add some extra margin to create spacing between the button and the content */
+  margin-top: auto;
+  margin-bottom: 20px;
   padding: 10px 20px;
   background-color: blue;
   color: white;
@@ -98,4 +89,35 @@
   background-color: white;
   color: black;
   border-color: #000000;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  .content-box {
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 90%;
+    padding: 15px; /* Adjust padding */
+  }
+
+  .content-box .ayah {
+    font-size: 2em; /* Decrease font size for Ayah */
+    margin-bottom: 15px;
+  }
+
+  .content-box .translation {
+    font-size: 1.2em; /* Decrease font size for translation */
+  }
+
+  .mission-statement {
+    font-size: 1.1em; /* Decrease font size for mission statement */
+  }
+
+  .mission-statement2 {
+    font-size: 1.5em; /* Decrease font size for second mission statement */
+  }
+
+  .learn-more-btn {
+    padding: 8px 16px; /* Adjust button padding */
+    font-size: 14px; /* Decrease button font size */
+  }
 }

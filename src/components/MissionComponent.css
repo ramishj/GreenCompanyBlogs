@@ -1,65 +1,93 @@
+/* Default styles */
 .mission-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #0d76d7;
-    color: white;
-    padding: 50px;
-    position: relative;
-    height: 100vh;
-    gap:10%
-  }
-  
-  .mission-content {
-    max-width: 50%;
-    text-align: left; /* Adjust text alignment */
-    
-  }
-  
-  .heading {
-    font-size: 2em;
-    font-weight: bold;
-    margin-top: 0;
-    text-align: start;
-  }
-  
-  .text {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  
-  .bold-text {
-    font-weight: bold;
-  }
-  
-  .mission-image {
-    flex: 1;
-    max-width: 30%;
-    
-    
-  }
-  
-  .mission-image img {
-    width: 100%;
-    border-radius: 5px;
-    
-  }
-  
-  .ayah-container {
-    position: absolute;
-    bottom: 20px;
-    right: 20px; /* Adjusted to shift to the right */
-    background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d76d7;
+  color: white;
+  padding: 50px;
+  position: relative;
+  height: 100vh;
+  gap: 10%;
+}
+
+.mission-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.heading {
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: start;
+}
+
+.text {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.mission-image {
+  flex: 1;
+  max-width: 30%;
+}
+
+.mission-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.ayah-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.ayah-text,
+.translation-text {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0d76d7;
+}
+
+/* Mobile optimized styles */
+@media (max-width: 768px) {
+  .mission-container {
     padding: 20px;
-    border-radius: 8px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .mission-content {
+    max-width: 100%;
+  }
+
+  .heading {
+    font-size: 1.5em;
     text-align: center;
   }
-  
-  .ayah-text,
-  .translation-text {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #0d76d7;
+
+  .text {
+    font-size: 1em;
   }
-  
+
+  .mission-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .ayah-container {
+    position: static;
+    margin-top: 20px;
+  }
+}
