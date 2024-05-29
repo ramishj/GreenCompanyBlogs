@@ -27,7 +27,7 @@
 .nav-link.active {
   font-weight: bold;
   text-decoration: underline;
-  color: rgb(0, 60, 255); /* Optional: Change color when active */
+  color: #0085FF; /* Optional: Change color when active */
 }
 
 

@@ -6,29 +6,27 @@ const articles = [
     title: 'Article 1',
     author: 'Author 1',
     description: 'Description of article 1.',
-    imageUrl: 'https://via.placeholder.com/150', // Placeholder image URL
+    imageUrl: 'https://t.ly/oT_Kj',
   },
   {
     title: 'Article 2',
     author: 'Author 2',
     description: 'Description of article 2.',
-    imageUrl: 'https://via.placeholder.com/150', // Placeholder image URL
-  },
-  {
-    title: 'Article 3',
-    author: 'Author 3',
-    description: 'Description of article 3.',
-    imageUrl: 'https://via.placeholder.com/150', // Placeholder image URL
-  },
-  {
-    title: 'Article 4',
-    author: 'Author 4',
-    description: 'Description of article 4.',
-    imageUrl: 'https://via.placeholder.com/150', // Placeholder image URL
-  },
+    imageUrl: 'https://t.ly/oT_Kj',
+  },{
+    title: 'Article 2',
+    author: 'Author 2',
+    description: 'Description of article 2.',
+    imageUrl: 'https://t.ly/oT_Kj',
+  }
+  // Rest of the articles...
 ];
 
 const BlogsAndArticles = () => {
+  const redirectToBlogsPage = () => {
+    window.location.href = "/blogs";
+  };
+
   return (
     <div className="blogs-and-articles">
       <div className="header">
@@ -46,6 +44,7 @@ const BlogsAndArticles = () => {
           </div>
         ))}
       </div>
+      <button className="load-more-btn" onClick={redirectToBlogsPage}>Load More</button>
     </div>
   );
 };
