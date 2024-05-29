@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 0 20% 0 20%;
+  padding: 0 20%;
 }
 
 .article {
@@ -36,7 +36,7 @@
 }
 
 .article img {
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -65,26 +65,15 @@
 
 /* Desktop styles */
 @media (min-width: 769px) {
-  .article {
-    width: 80%;
-  }
-
   .articles {
-    gap: 20px; /* Maintain gap between articles */
-    padding: 0 20% 0 20%;
-    grid-template-columns: repeat(3, 1fr); /* Two columns for desktop */
+    padding: 0 20%;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
   }
 
+  .learn-more-btn,
   .load-more-btn {
-    margin: 10px auto; /* Center horizontally */
     width: fit-content;
-    transition: background-color 0.3s;
-    display: block; /* Ensure the button is block-level for centering */
-  }
-
-  .learn-more-btn {
     margin: 10px auto; /* Center horizontally */
-    width: fit-content;
     transition: background-color 0.3s;
     display: block; /* Ensure the button is block-level for centering */
   }
@@ -92,5 +81,36 @@
   .learn-more-btn:hover,
   .load-more-btn:hover {
     background-color: #0056b3;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .articles {
+    grid-template-columns: 1fr; /* Single column for mobile */
+    padding: 0; /* Remove horizontal padding */
+  }
+
+  .article {
+    width: 90%; /* Set width to almost full width */
+    margin: 0 auto 20px auto; /* Center articles and add bottom margin */
+  }
+
+  .header .underline {
+    margin: 0 auto 10px auto; /* Reduce bottom margin */
+  }
+
+  .header .blue-text {
+    font-size: 1.2em; /* Reduce font size */
+  }
+
+  .learn-more-btn,
+  .load-more-btn {
+    width: 80%; /* Set button width to 80% of the container */
+    margin: 10px auto; /* Center horizontally */
+  }
+
+  .load-more-btn {
+    margin-top: 20px; /* Add top margin for load more button */
   }
 }

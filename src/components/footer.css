@@ -1,0 +1,113 @@
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-us,
+.footer-menu,
+.social-icons {
+  flex: 0 0 100%;
+  max-width: calc(33.33% - 20px); /* Adjust based on the number of sections */
+}
+
+.footer-menu {
+  text-align: center;
+}
+
+.footer-menu h4 {
+  font-size: 16px; /* Keep the font size consistent */
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 5px;
+}
+
+.footer-menu a {
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-menu a:hover {
+  color: #333;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  font-size: 14px;
+  color: #777;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #333;
+}
+
+/* Font Awesome Icons */
+
+.fab {
+  font-family: FontAwesome!important;
+}
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-instagram {
+  font-size: 16px;
+}
+
+.footer {
+  padding: 20px 0; /* Keep padding consistent */
+}
+
+.about-us p,
+.footer-menu li {
+  line-height: 1.5;
+}
+
+.about-us h2 {
+  font-size: 18px;
+}
+
+.footer-menu h4 {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}

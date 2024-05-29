@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import DiscussionForum from './pages/DiscussionForum';
 import BlogsAndArticlesPage from './pages/BlogsAndArticlesPage';
+import Footer from './components/footer';
 const App: React.FC = () => {
   return (
     <>
@@ -14,8 +15,8 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path='/discussion-forum' element={<DiscussionForum />} />
         <Route path="/blogs" element={<BlogsAndArticlesPage />} />
-        
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </>
   );
