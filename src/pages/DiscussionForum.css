@@ -1,0 +1,58 @@
+/* src/pages/DiscussionForumPage.css */
+.discussion-forum-page {
+    text-align: center;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .top-section {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+  }
+  
+  .forum-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+    
+  }
+  
+  .highlight {
+    color: #007BFF;
+  }
+  
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .search-button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .forum-description {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+  

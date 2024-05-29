@@ -4,15 +4,32 @@
   display: flex;
   justify-content: center;
   padding: 20px 0; /* Adjusted padding for top and bottom */
+  text-decoration: solid;
 }
 
+/* navbar.css */
 .navbar-list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
+
+
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(0, 60, 255); /* Optional: Change color when active */
+}
+
 
 .navbar-item {
   margin: 0 10px; /* Adjusted margin */

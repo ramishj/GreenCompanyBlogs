@@ -3,7 +3,8 @@ import HomePage from './pages/HomePage';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
-
+import DiscussionForum from './pages/DiscussionForum';
+import BlogsAndArticlesPage from './pages/BlogsAndArticlesPage';
 const App: React.FC = () => {
   return (
     <>
@@ -11,6 +12,8 @@ const App: React.FC = () => {
     <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path='/discussion-forum' element={<DiscussionForum />} />
+        <Route path="/blogs" element={<BlogsAndArticlesPage />} />
         
       </Routes>
     </BrowserRouter>
