@@ -5,15 +5,16 @@
   justify-content: center;
   background-color: #0d76d7;
   color: white;
-  padding: 50px;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   gap: 10%;
 }
 
 .mission-content {
   max-width: 50%;
   text-align: left;
+  display: flex;
+  gap: 10%;
 }
 
 .heading {
@@ -24,7 +25,7 @@
 }
 
 .text {
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5;
 }
 
@@ -54,7 +55,7 @@
 
 .ayah-text,
 .translation-text {
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-weight: bold;
   margin-bottom: 10px;
   color: #0d76d7;
@@ -66,6 +67,7 @@
     padding: 20px;
     height: auto;
     flex-direction: column;
+    gap: 20px; /* Increase the gap for better spacing */
   }
 
   .mission-content {
@@ -83,11 +85,26 @@
 
   .mission-image {
     max-width: 100%;
-    margin-top: 20px;
+  }
+
+  .mission-image img {
+    border-radius: 8px; /* Increase border-radius for a smoother look */
   }
 
   .ayah-container {
     position: static;
     margin-top: 20px;
+  }
+}
+
+/* Desktop optimized styles */
+@media (min-width: 769px) {
+  .mission-image {
+    max-width: 25%; /* Adjust the max-width for desktop screens */
+    align-self: flex-end;
+  }
+
+  .mission-image img {
+    border-radius: 5px; /* Retain border-radius */
   }
 }
