@@ -1,0 +1,136 @@
+/* Global styles */
+.discussion-forum-page {
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  /* Top section styles */
+  .top-section {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Position relative for absolute positioning of image */
+  }
+  
+  /* Text container styles */
+  .text-container {
+    flex: 1;
+    margin-right: 20px;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Forum title styles */
+  .forum-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left; /* Align title to the left */
+  }
+  
+  /* Highlight styles */
+  .highlight {
+    color: #007BFF;
+  }
+  
+  /* Search bar container styles */
+  .search-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Search bar styles */
+  .search-bar {
+    width: 60%; /* Adjust width as needed */
+    max-width: 400px; /* Limit maximum width */
+    padding: 12px;
+    font-size: 16px; /* Default font size */
+    border: none;
+    border-radius: 25px;
+    outline: none;
+  }
+  
+  /* Search icon styles */
+  .search-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    color: #fff;
+  }
+  
+  /* Image container styles */
+  .image-container {
+    flex: 1;
+    max-width: 300px; /* Limit maximum width of the image */
+  }
+  
+  /* Discussion image styles */
+  .discussion-image {
+    max-width: 60%; /* Set maximum width to 100% */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px;
+    position: absolute;
+    top: 20px; /* Adjust distance from top */
+    right: 50px; /* Adjust distance from right */
+  }
+  
+  /* Forum description styles */
+  .forum-description {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    /* Top section adjustments for mobile */
+    .top-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Text container adjustments for mobile */
+    .text-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+      padding-left: 0; /* Adjust padding for center alignment */
+      text-align: center; /* Center text in mobile */
+      justify-content: center;
+    }
+  
+    /* Forum title adjustments for mobile */
+    .forum-title {
+      font-size: 24px; /* Smaller font size for mobile */
+    }
+  
+    /* Search bar adjustments for mobile */
+    .search-bar {
+      font-size: 14px; /* Smaller font size for mobile */
+      width: 100%;
+    }
+  
+    /* Discussion image adjustments for mobile */
+    .discussion-image {
+      width: 80%; /* Adjust width as needed */
+      top: 10px; /* Adjust distance from top */
+      right: 10px; /* Adjust distance from right */
+      position: static; /* Change position to static so it's not absolute */
+      margin-top: 20px; /* Add margin to separate from text */
+    }
+  
+    /* Forum description adjustments for mobile */
+    .forum-description {
+      font-size: 14px; /* Smaller font size for mobile */
+      text-align: center; /* Center text in mobile */
+    }
+    .image-container {
+        flex: 1;
+        max-width: 300px; /* Limit maximum width of the image */
+        /* margin-left: auto; */
+        display: block;
+      }
+  }
+  

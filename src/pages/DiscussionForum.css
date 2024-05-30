@@ -123,13 +123,18 @@
 }
   /* Discussion image adjustments for mobile */
   .discussion-image {
-    width: 80%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
     top: 10px; /* Adjust distance from top */
     right: 10px; /* Adjust distance from right */
     position: static; /* Change position to static so it's not absolute */
     margin-top: 20px; /* Add margin to separate from text */
+    
   }
-
+  .image-container {
+    flex: 1;
+    width: 100%; /* Limit maximum width of the image */
+    margin-left: auto;
+  }
   /* Forum description adjustments for mobile */
   .forum-description {
     font-size: 14px; /* Smaller font size for mobile */

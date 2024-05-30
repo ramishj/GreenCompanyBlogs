@@ -7,7 +7,7 @@ import Footer from './components/footer';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const DiscussionForum = lazy(() => import('./pages/DiscussionForum'));
 const BlogsAndArticlesPage = lazy(() => import('./pages/BlogsAndArticlesPage'));
-
+const EventsPage = lazy(() => import('./pages/Events'));
 const App: React.FC = () => {
   return (
     <>
@@ -18,6 +18,7 @@ const App: React.FC = () => {
             <Route path="/" element={<HomePage />} />
             <Route path='/discussion-forum' element={<DiscussionForum />} />
             <Route path="/blogs" element={<BlogsAndArticlesPage />} />
+            <Route path='/events' element={<EventsPage />} />
           </Routes>
         </Suspense>
         <Footer />
