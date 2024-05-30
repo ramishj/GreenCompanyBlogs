@@ -142,9 +142,13 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .insights-section{
+    padding: 0 0%;
+  }
   .insights-grid {
-    grid-template-columns: 1fr;
-    padding: 0;
+    grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
+    gap: 10px; /* Gap between grid items */
+    padding: 0 0;
   }
 
   .insight-item {
@@ -153,5 +157,55 @@
 
   .insight-details {
     height: auto; /* Adjust height for details container on mobile */
+  }
+
+  .section-title {
+    font-size: 20px; /* Reduce font size for section title */
+  }
+
+  .filters {
+    margin-bottom: 10px; /* Reduce margin for filters */
+  }
+
+  .filter-button,
+  .filter-dropdown {
+    padding: 8px 16px; /* Reduce padding for filter buttons */
+    font-size: 14px; /* Reduce font size for filter buttons */
+  }
+
+  .insight-title {
+    font-size: 0.7em; /* Reduce font size for insight title */
+  }
+
+  .insight-description {
+    font-size: 0.5em; /* Reduce font size for insight description */
+  }
+
+  .insight-writer {
+    margin-top: 8px; /* Reduce margin for writer section */
+  }
+
+  .writer-profile-pic {
+    width: 20px; /* Reduce size of writer profile picture */
+    height: 20px;
+    margin-right: 6px; /* Reduce margin for writer profile picture */
+  }
+
+  .insight-writer-info {
+    font-size: 12px; /* Reduce font size for writer info */
+  }
+
+  .insight-date {
+    font-size: 10px; /* Reduce font size for date */
+  }
+
+  .writer-name {
+    font-size: 10px; /* Reduce font size for writer name */
+  }
+
+  .load-more-button {
+    margin: 10px auto; /* Reduce margin for load more button */
+    padding: 8px 16px; /* Reduce padding for load more button */
+    font-size: 14px; /* Reduce font size for load more button */
   }
 }

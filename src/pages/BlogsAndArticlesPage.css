@@ -11,6 +11,7 @@ body {
   padding: 20px;
   background-color: #007BFF;
   color: #fff;
+  border-radius: 10px;
 }
 
 .page-title {
@@ -155,6 +156,60 @@ body {
 @media (max-width: 768px) {
   .main-content {
     grid-template-columns: 1fr;
+  }
+  .spotlight-section {
+    height: auto; /* Change height to auto */
+    max-height: 500px; /* Limit maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .spotlight-content {
+    flex-direction: column; /* Change direction to column for mobile */
+  }
+  
+  .spotlight-image-container {
+    width: 100%;
+    height: 200px; /* Fixed height for the image container */
+    overflow: hidden; /* Hide any overflow */
+  }
+
+  .spotlight-text {
+    text-align: center; /* Center align text */
+    margin-top: 10px; /* Adjust margin */
+  }
+
+  .spotlight-title {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .spotlight-description {
+    font-size: 14px; /* Adjust font size */
+    margin-top: 5px; /* Adjust margin */
+  }
+
+  .spotlight-writer {
+    flex-direction: column; /* Change direction to column for mobile */
+    align-items: center; /* Center align items */
+    margin-top: 10px; /* Adjust margin */
+  }
+
+  .writer-profile-pic {
+    width: 30px; /* Adjust size */
+    height: 30px; /* Adjust size */
+    margin-right: 0; /* Remove margin */
+    margin-bottom: 5px; /* Adjust margin */
+  }
+
+  .spotlight-writer-info {
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .spotlight-date {
+    font-size: 10px; /* Adjust font size */
+  }
+
+  .writer-name {
+    font-size: 12px; /* Adjust font size */
   }
 }
 
