@@ -1,4 +1,3 @@
-/* InsightSection.css */
 .insights-section {
   margin-top: 40px;
   padding: 20px;
@@ -32,15 +31,15 @@
 
 .filter-dropdown {
   background-color: #fff;
-  color: #007BFF;
-  border: 1px solid #007BFF;
+  color: #0085FF;
+  border: 1px solid #0085FF;
 }
 
 .insights-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 0 20%;
+  padding: 0 15%;
 }
 
 .insight-item {
@@ -50,55 +49,71 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  height: 400px; /* Fixed height for each insight item */
 }
 
 .insight-image-container {
   width: 100%;
   height: 150px; /* Fixed height for image container */
   overflow: hidden; /* Hide overflow content */
-  
 }
 
 .insight-image {
-  width: 90%;
+  width: 100%;
   height: 100%;
- padding: 10px;
-  
-border-radius: 8px;
+  object-fit: cover; /* Ensure the image covers the container */
 }
 
 .insight-details {
-  width: 80%;
   padding: 10px; /* Add padding to the content section */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px; /* Fixed height for details container */
+  overflow: hidden;
 }
 
 .insight-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
-  margin-top: 5px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .insight-description {
   font-size: 14px;
   margin-top: 5px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .insight-writer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .writer-profile-pic {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .insight-writer-info {
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +143,15 @@ border-radius: 8px;
 /* Responsive Design */
 @media (max-width: 768px) {
   .insights-grid {
-      grid-template-columns: 1fr;
-      padding: 0;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .insight-item {
+    height: auto; /* Adjust height for mobile view */
+  }
+
+  .insight-details {
+    height: auto; /* Adjust height for details container on mobile */
   }
 }

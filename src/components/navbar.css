@@ -30,25 +30,57 @@
   color: #0085FF; /* Optional: Change color when active */
 }
 
+/* Disable hover effect for active links */
+
+
+
 
 .navbar-item {
   margin: 0 10px; /* Adjusted margin */
 }
 
 .navbar-item a {
-  color: #333; /* Link color */
+  color: #333;
   text-decoration: none;
-  font-size: 16px; /* Adjusted font size */
-  transition: color 0.3s; /* Smooth transition for color change */
-  padding: 8px 16px; /* Adjusted padding around text */
-  border: 2px solid transparent; /* Transparent border initially */
-  border-radius: 20px; /* Border radius */
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  position: relative;
+  display: inline-block; /* Ensure the width of the link matches its content */
 }
 
-.navbar-item a:hover {
-  background-color: #ccc; /* Light gray background on hover */
-  color: white; /* Text color on hover */
-  border-color: #333; /* Border color on hover */
+.navbar-item a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Set the width to 100% to match the width of the link */
+  height: 4px; /* Height of the blue color dash */
+  background-color: #0085FF; /* Blue color for the dash */
+  transform: scaleX(0); /* Initially hide the dash */
+  transform-origin: bottom; /* Set the transform origin to bottom */
+  transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+.navbar-item a:hover::after {
+  transform: scaleX(1); /* Show the dash on hover */
+}
+.nav-link.active:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0085FF; /* Optional: Change color when active */
+  
+}
+.navbar-item a:hover::after {
+  /* Apply the hover effect only if the link does not have the .active class */
+  transform: scaleX(1);
+}
+
+/* Disable hover effect for active links */
+.navbar-item a.active:hover::after {
+  transform: scaleX(0); /* Hide the dash for active links on hover */
 }
 
 /* Media query for smaller screens */

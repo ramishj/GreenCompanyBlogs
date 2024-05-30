@@ -9,6 +9,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  font-family: "DM Sans",sans-serif;
 }
 
 .homepage::before {

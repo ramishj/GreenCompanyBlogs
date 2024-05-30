@@ -1,152 +1,165 @@
-/* src/pages/BlogsAndArticlesPage.css */
 body {
-    font-family: 'DM Sans', sans-serif;
-  }
-  
-  .blogs-and-articles-page {
-    padding: 20px;
-  }
-  
-  .page-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #007BFF;
-    color: #fff;
-  }
-  
-  .page-title {
-    font-size: 36px;
-  }
-  
-  .page-title .highlight {
-    color: #000;
-  }
-  
-  .page-subtitle {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  
+  font-family: 'DM Sans', sans-serif;
+}
+
+.blogs-and-articles-page {
+  padding: 20px;
+}
+
+.page-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.page-title {
+  font-size: 36px;
+}
+
+.page-title .highlight {
+  color: #000;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  margin: 10px 20%;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 15.0%;
+}
+
+.spotlight-section,
+.trending-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  height: 500px; /* Ensuring both sections are of equal height */
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.spotlight-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.spotlight-image-container {
+  width: 100%;
+  height: 200px; /* Fixed height for the image container */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.spotlight-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  border-radius: 8px;
+}
+
+.spotlight-text {
+  text-align: left;
+  flex-grow: 1; /* Allow the text to take up remaining space */
+}
+
+.spotlight-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.spotlight-description {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.spotlight-writer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.writer-profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.spotlight-writer-info,
+.trending-writer-info,
+.insight-writer-info {
+  font-size: 14px;
+}
+
+.trending-list {
+  list-style: none;
+  padding: 0;
+  max-height: 440px; /* Scrollable area height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.trending-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.trending-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.trending-description {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.trending-writer {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.trending-date {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.insights-section {
+  margin-top: 40px;
+}
+
+.load-more-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .main-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 40px;
-    padding: 0 20%;
+    grid-template-columns: 1fr;
   }
-  
-  .spotlight-section,
-  .trending-section {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .spotlight-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .spotlight-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .spotlight-text {
-    text-align: left;
-  }
-  
-  .spotlight-title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .spotlight-description {
-    font-size: 16px;
-    margin-top: 10px;
-  }
-  
-  .spotlight-writer {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .writer-profile-pic {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .spotlight-writer-info,
-  .trending-writer-info,
-  .insight-writer-info {
-    font-size: 14px;
-  }
-  
-  .trending-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .trending-item {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-  }
-  
-  .trending-title {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .trending-description {
-    font-size: 16px;
-    margin-top: 5px;
-  }
-  
-  .trending-writer {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-  }
-  
-  .trending-date {
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  .insights-section {
-    margin-top: 40px;
-  }
-  
-  
-  
- 
-  
-  .load-more-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .main-content {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
+
+.trending-category {
+  color: #007BFF; /* Set the color to blue */
+  font-weight: bold; /* Optionally, make it bold */
+  margin-bottom: 0px;
+}

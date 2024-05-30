@@ -1,4 +1,3 @@
-// InsightSection.tsx
 import React, { useState } from 'react';
 import './InsightSection.css';
 
@@ -14,29 +13,30 @@ interface InsightItem {
 
 const initialInsightsData: InsightItem[] = [
   {
-    image: 'https://t.ly/TMVcW',
+    image: 'https://shorturl.at/0126e',
     title: '6 Strategies to Find Your Conference Keynote and Other Speakers',
     description: 'Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Booketboks. Hanya perlu mengikuti beberapa langkah mudah.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY',
+    writerProfilePic: 'https://shorturl.at/0126e',
     category: 'Technology'
   },
   {
-    image: 'https://t.ly/BOVWY',
+    image: 'https://shorturl.at/0126e',
     title: 'How Successfully Used Paid Marketing to Drive Incremental Ticket Sales',
     description: 'Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Booketboks. Hanya perlu mengikuti beberapa langkah mudah.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY',
+    writerProfilePic: 'https://shorturl.at/0126e',
     category: 'Marketing'
-  },{
-    image: 'https://t.ly/BOVWY',
+  },
+  {
+    image: 'https://shorturl.at/0126e',
     title: 'New Insight Title 2',
     description: 'Description for the new insight item 2.',
     date: '14 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY',
+    writerProfilePic: 'https://shorturl.at/0126e',
     category: 'Health'
   }
   // Add more initial insights as needed
@@ -44,30 +44,30 @@ const initialInsightsData: InsightItem[] = [
 
 const moreInsightsData: InsightItem[] = [
   {
-    image: 'https://t.ly/BOVWY',
+    image: 'https://shorturl.at/0126e',
     title: 'New Insight Title 1',
     description: 'Description for the new insight item 1.',
     date: '13 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY',
+    writerProfilePic: 'https://shorturl.at/0126e',
     category: 'Business'
   },
   {
-    image: 'https://t.ly/BOVWY',
+    image: 'https://shorturl.at/0126e',
     title: 'New Insight Title 2',
     description: 'Description for the new insight item 2.',
     date: '14 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY',
+    writerProfilePic: 'https://shorturl.at/0126e',
     category: 'Health'
   },
   {
-    image: 'https://t.ly/BOVWY',
+    image: 'https://shorturl.at/0126e',
     title: 'New Insight Title 2',
     description: 'Description for the new insight item 2.',
     date: '14 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY',
+    writerProfilePic: 'https://shorturl.at/0126e',
     category: 'Health'
   }
   // Add more items as needed

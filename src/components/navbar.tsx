@@ -38,9 +38,9 @@ const Navbar: React.FC = () => {
 
   if (isMobile) {
     return (
-      <AppBar sx={{ position: "static", border: "2px solid #000" }}>
+      <AppBar sx={{ position: "static", border: "2px solid #000" ,backgroundColor:"white"}}>
         <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="open drawer" onClick={toggleDrawer(true)}>
+          <IconButton edge="start" color="inherit" sx={{color:"black"}} aria-label="open drawer" onClick={toggleDrawer(true)}>
             <MenuIcon />
           </IconButton>
           <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>

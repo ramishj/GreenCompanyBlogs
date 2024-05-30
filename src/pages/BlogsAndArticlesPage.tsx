@@ -20,13 +20,22 @@ interface TrendingItem {
 }
 
 const spotlightData: SpotlightItem = {
-  image: 'https://t.ly/BOVWY',
+  image: 'https://shorturl.at/0126e',
   title: 'How can people stop any War happening in the world?',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, nisl eget facilisis ullamcorper, dolor arcu gravida nisl, in suscipit ligula magna sit amet elit.',
   date: '12 Mar',
   writer: 'Ramish',
-  writerProfilePic: 'https://t.ly/BOVWY'
+  writerProfilePic: 'https://shorturl.at/0126e'
 };
+
+interface TrendingItem {
+  title: string;
+  description: string;
+  date: string;
+  writer: string;
+  writerProfilePic: string;
+  category: string; // New field for category
+}
 
 const trendingData: TrendingItem[] = [
   {
@@ -34,24 +43,72 @@ const trendingData: TrendingItem[] = [
     description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY'
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Marketing' // Example category
   },
   {
     title: 'Emerging Technologies and Economies',
     description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://t.ly/BOVWY'
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Technology' // Example category
+  },{
+    title: 'Social Media Marketing and its trends in 2024',
+    description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '12 Mar',
+    writer: 'Ramish',
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Marketing' // Example category
+  },
+  {
+    title: 'Emerging Technologies and Economies',
+    description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '12 Mar',
+    writer: 'Ramish',
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Technology' // Example category
+  },{
+    title: 'Social Media Marketing and its trends in 2024',
+    description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '12 Mar',
+    writer: 'Ramish',
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Marketing' // Example category
+  },
+  {
+    title: 'Emerging Technologies and Economies',
+    description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '12 Mar',
+    writer: 'Ramish',
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Technology' // Example category
+  },{
+    title: 'Social Media Marketing and its trends in 2024',
+    description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '12 Mar',
+    writer: 'Ramish',
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Marketing' // Example category
+  },
+  {
+    title: 'Emerging Technologies and Economies',
+    description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    date: '12 Mar',
+    writer: 'Ramish',
+    writerProfilePic: 'https://shorturl.at/0126e',
+    category: 'Technology' // Example category
   },
   // Add more trending items as needed
 ];
+
 
 const BlogsAndArticlesPage: React.FC = () => {
   return (
     <div className="blogs-and-articles-page">
       <header className="page-header">
         <h1 className="page-title">
-          Blogs and <span className="highlight">Articles</span>
+        <span className="highlight">Blogs and </span>Articles
         </h1>
         <p className="page-subtitle">
           Explore our precious reports, blogs and articles to increase your knowledge prepared by Industry leaders and Experts and Influential Muslim Personalities.
@@ -62,7 +119,10 @@ const BlogsAndArticlesPage: React.FC = () => {
         <section className="spotlight-section">
           <h2 className="section-title">Spotlight</h2>
           <div className="spotlight-content">
-            <img src={spotlightData.image} alt="Spotlight" className="spotlight-image" />
+          <div className="spotlight-image-container">
+  <img src={spotlightData.image} alt="Spotlight" className="spotlight-image" />
+</div>
+
             <div className="spotlight-text">
               <h3 className="spotlight-title">{spotlightData.title}</h3>
               <p className="spotlight-description">{spotlightData.description}</p>
@@ -79,18 +139,23 @@ const BlogsAndArticlesPage: React.FC = () => {
         <section className="trending-section">
           <h2 className="section-title">Trending</h2>
           <ul className="trending-list">
-            {trendingData.map((item, index) => (
-              <li key={index} className="trending-item">
-                <h3 className="trending-title">{item.title}</h3>
-                <p className="trending-description">{item.description}</p>
-                <div className="trending-writer">
-                  <img src={item.writerProfilePic} alt={item.writer} className="writer-profile-pic" />
-                  <p className="trending-writer-info">
-                    <span className="trending-date">{item.date}</span> - <span className="writer-name">{item.writer}</span>
-                  </p>
-                </div>
-              </li>
-            ))}
+          {trendingData.map((item, index) => (
+  <li key={index} className="trending-item">
+    <p className="trending-category">{item.category}</p>
+    {/* Render category here */}
+    <h3 className="trending-title">{item.title}</h3>
+    <p className="trending-description">{item.description}</p>
+    
+    <div className="trending-writer">
+      <img src={item.writerProfilePic} alt={item.writer} className="writer-profile-pic" />
+      <p className="trending-writer-info">
+        <span className="trending-date">{item.date}</span> - <span className="writer-name">{item.writer}</span>
+      </p>
+    </div>
+  </li>
+))}
+
+
           </ul>
         </section>
       </div>

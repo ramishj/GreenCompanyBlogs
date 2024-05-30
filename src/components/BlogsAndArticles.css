@@ -1,6 +1,6 @@
 /* Default styles */
 .blogs-and-articles {
-  padding: 20px;
+  padding: 0 5%;
 }
 
 .header {
@@ -10,20 +10,20 @@
 .header .underline {
   width: 50px;
   height: 2px;
-  background-color: #0d76d7;
+  background-color: #0085FF;
   margin: 0 auto 20px auto;
 }
 
 .header .blue-text {
   font-size: 1.5em;
-  color: #0d76d7;
+  color: #0085FF;
 }
 
 .articles {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 0 20%;
+ 
 }
 
 .article {
@@ -53,7 +53,7 @@
 
 .learn-more-btn,
 .load-more-btn {
-  background-color: #0d76d7;
+  background-color: #0085FF;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -66,7 +66,7 @@
 /* Desktop styles */
 @media (min-width: 769px) {
   .articles {
-    padding: 0 20%;
+    padding: 0 10%;
     grid-template-columns: repeat(3, 1fr); /* Three columns for desktop */
   }
 

@@ -6,18 +6,18 @@ const articles = [
     title: 'Article 1',
     author: 'Author 1',
     description: 'Description of article 1.',
-    imageUrl: 'https://t.ly/oT_Kj',
+    imageUrl: 'https://shorturl.at/0126e',
   },
   {
     title: 'Article 2',
     author: 'Author 2',
     description: 'Description of article 2.',
-    imageUrl: 'https://t.ly/oT_Kj',
+    imageUrl: 'https://shorturl.at/0126e',
   },{
     title: 'Article 2',
     author: 'Author 2',
     description: 'Description of article 2.',
-    imageUrl: 'https://t.ly/oT_Kj',
+    imageUrl: 'https://shorturl.at/0126e',
   }
   // Rest of the articles...
 ];
