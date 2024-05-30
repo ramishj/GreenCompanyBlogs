@@ -14,7 +14,7 @@ interface InsightItem {
 
 const initialInsightsData: InsightItem[] = [
   {
-    image: 'https://t.ly/BOVWY',
+    image: 'https://t.ly/TMVcW',
     title: '6 Strategies to Find Your Conference Keynote and Other Speakers',
     description: 'Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Booketboks. Hanya perlu mengikuti beberapa langkah mudah.',
     date: '12 Mar',
@@ -105,14 +105,18 @@ const InsightSection: React.FC = () => {
       <div className="insights-grid">
         {filteredInsights.map((item, index) => (
           <div key={index} className="insight-item">
-            <img src={item.image} alt={item.title} className="insight-image" />
-            <h3 className="insight-title">{item.title}</h3>
-            <p className="insight-description">{item.description}</p>
-            <div className="insight-writer">
-              <img src={item.writerProfilePic} alt={item.writer} className="writer-profile-pic" />
-              <p className="insight-writer-info">
-                <span className="insight-date">{item.date}</span> - <span className="writer-name">{item.writer}</span>
-              </p>
+            <div className="insight-image-container">
+              <img src={item.image} alt={item.title} className="insight-image" />
+            </div>
+            <div className="insight-details">
+              <h3 className="insight-title">{item.title}</h3>
+              <p className="insight-description">{item.description}</p>
+              <div className="insight-writer">
+                <img src={item.writerProfilePic} alt={item.writer} className="writer-profile-pic" />
+                <p className="insight-writer-info">
+                  <span className="insight-date">{item.date}</span> - <span className="writer-name">{item.writer}</span>
+                </p>
+              </div>
             </div>
           </div>
         ))}

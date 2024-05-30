@@ -1,6 +1,5 @@
 /* src/pages/DiscussionForumPage.css */
 .discussion-forum-page {
-  text-align: center;
   font-family: 'DM Sans', sans-serif;
 }
 
@@ -8,10 +7,11 @@
   background-color: #000;
   color: #fff;
   padding: 20px;
+  text-align: center; /* Center the text */
 }
 
 .forum-title {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 
@@ -19,37 +19,73 @@
   color: #007BFF;
 }
 
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  margin-top: 20px;
+}
+
 .search-bar-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-right: 20px; /* Add margin to separate search bar and image */
 }
 
 .search-bar {
-  width: 100%;
-  max-width: 300px;
-  padding: 10px;
-  margin-bottom: 10px;
+  width: auto; /* Adjust width as needed */
+  flex: 1; /* Take remaining space */
+  max-width: 400px; /* Limit maximum width */
+  padding: 12px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   outline: none;
 }
 
-.search-button {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  background-color: #fff;
-  color: #000;
-  border-radius: 5px;
-  cursor: pointer;
-  outline: none;
+.search-icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.image-container {
+  margin-left: 20px; /* Add margin to separate search bar and image */
+}
+
+.discussion-image {
+  width: auto; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  border-radius: 20px;
 }
 
 .forum-description {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
-  margin: 0 10px;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    display: none;
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar-container {
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    max-width: 300px;
+  }
+
+  .forum-description {
+    font-size: 16px;
+  }
 }

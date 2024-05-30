@@ -94,6 +94,7 @@
   .article {
     width: 90%; /* Set width to almost full width */
     margin: 0 auto 20px auto; /* Center articles and add bottom margin */
+    
   }
 
   .header .underline {
