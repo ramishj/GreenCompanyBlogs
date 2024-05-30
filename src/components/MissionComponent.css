@@ -51,11 +51,12 @@
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+  margin-left: 20%;
 }
 
 .ayah-text,
 .translation-text {
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 10px;
   color: #0d76d7;
@@ -92,8 +93,10 @@
   }
 
   .ayah-container {
-    position: static;
-    margin-top: 20px;
+    position: relative; /* Change position to relative */
+    margin: 20px auto 0; /* Adjust margin for better positioning */
+    bottom: auto; /* Reset bottom */
+    right: auto; /* Reset right */
   }
 }
 

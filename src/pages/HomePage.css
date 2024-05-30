@@ -1,6 +1,6 @@
 /* Common styles for both desktop and mobile */
 .homepage {
-  background-image: url('../assets/Quran_BG.jpg');
+  background-image: url('../assets/Quran_BG.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -18,12 +18,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   z-index: -1;
 }
 
 .content-box {
-  background-color: rgba(255, 255, 255, 0.15);
+  
   width: 80%;
   max-width: 80%;
   padding: 20px;
@@ -44,7 +44,7 @@
 
 .content-box .translation {
   font-size: 1.5em;
-  color: #000000;
+  color: #0085FF;
   font-weight: bold;
 }
 
@@ -57,9 +57,11 @@
   font-size: 1.3em;
   font-family: "Montserrat";
   font-weight: bold;
+  color: #ffffff;
 }
 
 .mission-statement2 {
+  color: #ffffff;
   width: 100%;
   text-align: left;
   font-size: 2em;
@@ -69,14 +71,14 @@
 }
 
 .blue-text {
-  color: #0d76d7;
+  color: #0085FF;
 }
 
 .learn-more-btn {
   margin-top: auto;
   margin-bottom: 20px;
   padding: 10px 20px;
-  background-color: blue;
+  background-color: 0d76d7;
   color: white;
   border: none;
   border-radius: 5px;
