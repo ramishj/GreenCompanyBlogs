@@ -1,0 +1,220 @@
+.exclusive-event-section {
+    background-color: #0056b3; /* Blue background */
+    color: white; /* White text */
+    padding: 20px 0;
+    border-radius: 5px;
+    text-align: center; /* Centered text */
+  }
+  
+  .event-card-exclusive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20%;
+    flex-direction: row; /* Stack items vertically */
+  }
+  
+  .event-image {
+    border-radius: 10px;
+    margin-right: 20px;
+    height: 500px;
+    object-fit: cover; /* Cover the entire area of the container */
+  }
+  
+  /* Add a blue box around event details */
+.event-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #021c38; /* Blue background */
+    color: white; /* White text */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  /* Add white boxes around the timer */
+ 
+  
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .time-box {
+    text-align: center;
+    margin: 0 5px;
+    background-color: white; /* White background */
+    color: #0056b3; /* Blue text */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .time-number {
+    font-size: 2em;
+  }
+  
+  .time-label {
+    font-size: 0.75em;
+  }
+  
+  .event-info {
+    text-align: center;
+  }
+  
+  .event-title {
+    margin-bottom: 5px;
+  }
+  
+  .event-subtitle {
+    margin-bottom: 10px;
+  }
+  
+  .event-speaker {
+    margin-bottom: 10px;
+  }
+  
+  .add-to-calendar {
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    margin-bottom: 10px;
+  }
+  
+  .event-mode {
+    margin-bottom: 10px;
+  }
+  
+  .register-button {
+    background-color: #ff5722; /* Orange button */
+    color: white; /* White text on button */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  .upcoming-events-section {
+    padding: 20px 0;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .event-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Hide the overflow by covering the container */
+}
+
+
+  
+  .event-description {
+    text-align: center;
+  }
+  
+  .event-date-small {
+    font-size: 0.75em;
+    margin-bottom: 5px;
+  }
+  
+  .event-name {
+    font-size: 1.25em;
+    margin-bottom: 5px;
+  }
+  
+  .event-speaker-small {
+    font-size: 0.75em;
+    margin-bottom: 10px;
+  }
+  
+  .load-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #0085FF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-card-exclusive {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 10px; /* Reduce gap between items */
+      }
+    
+      .event-image {
+        height: 300px; /* Reduce image height on small screens */
+        margin-right: 0; /* Remove right margin on small screens */
+      }
+    
+      .event-details {
+        padding: 10px; /* Reduce padding for details container on small screens */
+        margin: 10px 0; /* Reduce margin for details container on small screens */
+      }
+    
+      .time-box {
+        padding: 5px; /* Reduce padding for timer boxes on small screens */
+      }
+    
+      .register-button {
+        padding: 5px 10px; /* Reduce padding for register button on small screens */
+      }
+    .events-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
+      gap: 10px; /* Gap between grid items */
+      padding: 5%;
+    }
+  
+    .event-card {
+      height: auto; /* Adjust height for mobile view */
+    }
+  
+    .event-details {
+      height: auto; /* Adjust height for details container on mobile */
+    }
+  
+    .section-title {
+      font-size: 20px; /* Reduce font size for section title */
+    }
+  
+    .event-date-small {
+      font-size: 0.75em; /* Reduce font size for event date */
+    }
+  
+    .event-name {
+      font-size: 1em; /* Reduce font size for event name */
+    }
+  
+    .event-speaker-small {
+      font-size: 0.75em; /* Reduce font size for event speaker */
+    }
+  
+    .load-more-button {
+      margin: 10px auto; /* Reduce margin for load more button */
+      padding: 8px 16px; /* Reduce padding for load more button */
+      font-size: 14px; /* Reduce font size for load more button */
+    }
+  }
+  

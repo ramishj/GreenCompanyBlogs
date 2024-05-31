@@ -5,6 +5,7 @@
   justify-content: center;
   padding: 20px 0; /* Adjusted padding for top and bottom */
   text-decoration: solid;
+  
 }
 
 /* navbar.css */
@@ -85,8 +86,13 @@
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+  .navbar{
+    border: 0;
+    border-color: none;
+  }
   .navbar-item {
     margin: 0 5px; /* Further reduced margin */
+    
   }
 
   .navbar-item a {

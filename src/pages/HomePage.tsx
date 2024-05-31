@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import './HomePage.css';
 import BlogsAndArticles from '../components/BlogsAndArticles';
 import MissionComponent from '../components/MissionComponent';
+const EventsPage = lazy(() => import('../components/HomeEvents'));
 const HomePage: React.FC = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const HomePage: React.FC = () => {
     </div>
     <BlogsAndArticles/>
     <MissionComponent/>
+    <EventsPage/>
     </>
   );
 };

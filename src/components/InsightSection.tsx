@@ -91,7 +91,8 @@ const InsightSection: React.FC = () => {
 
   return (
     <section className="insights-section">
-      <h2 className="section-title">Explore our Insights</h2>
+      <div className="insights-header">
+      <h2 className="section-title">Explore <span className="blueHighlight">our Insights</span></h2>
       <div className="filters">
         <button className="filter-button" onClick={() => setCategory('all')}>All</button>
         <select className="filter-dropdown" value={category} onChange={handleCategoryChange}>
@@ -100,8 +101,8 @@ const InsightSection: React.FC = () => {
           <option value="Marketing">Marketing</option>
           <option value="Business">Business</option>
           <option value="Health">Health</option>
-        </select>
-      </div>
+        </select></div>
+      </div><div></div>
       <div className="insights-grid">
         {filteredInsights.map((item, index) => (
           <div key={index} className="insight-item">

@@ -3,8 +3,20 @@
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
+  font: "DM Sans",sans-serif;
+  padding: 0 15%;
+  padding-bottom: 5px;
+  
+  
 }
-
+.insights-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
 .section-title {
   font-size: 24px;
   text-align: center;
@@ -39,7 +51,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 0 15%;
+  
 }
 
 .insight-item {
@@ -134,7 +146,7 @@
   padding: 10px 20px;
   font-size: 16px;
   border: none;
-  background-color: #007BFF;
+  background-color: #0085FF;
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
@@ -144,6 +156,8 @@
 @media (max-width: 768px) {
   .insights-section{
     padding: 0 0%;
+    padding: 5px 3%;
+  padding-bottom: 5px;
   }
   .insights-grid {
     grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
@@ -208,4 +222,7 @@
     padding: 8px 16px; /* Reduce padding for load more button */
     font-size: 14px; /* Reduce font size for load more button */
   }
+}
+.blueHighlight{
+  color: #0085FF;
 }
