@@ -2,10 +2,12 @@ import React from 'react';
 import './DiscussionForum.css';
 import SearchIcon from '@mui/icons-material/Search'; // Import SearchIcon from Material-UI
 import discussionImage from '../assets/Image_Intellect_DiscussionPage.png'; // Import the image
+import DiscussionForumMain from '../components/DiscussionForumMain';
 
 const DiscussionForum: React.FC = () => {
   return (
-    <div className="discussion-forum-page">
+  <>   
+   <div className="discussion-forum-page">
       <div className="top-section">
         <div className="text-container">
           <h1 className="forum-title">
@@ -24,6 +26,9 @@ const DiscussionForum: React.FC = () => {
         </div>
       </div>
     </div>
+    <DiscussionForumMain/>
+    </>
+
   );
 };
 
