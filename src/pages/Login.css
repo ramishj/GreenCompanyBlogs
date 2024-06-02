@@ -1,0 +1,46 @@
+/* Login.css */
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50%;
+    flex-direction: column;
+  }
+  
+  .login-form {
+    width: 80%;
+    padding: 20px;
+  }
+  
+  .image-container {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .image_signup {
+    width: 80%;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  /* Hide image on mobile */
+  @media (max-width: 768px) {
+    .image-container {
+      display: none;
+    }
+    .login-container{
+        width: 90%;
+    }
+  }
+  

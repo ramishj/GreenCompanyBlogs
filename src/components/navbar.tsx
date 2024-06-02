@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
     { to: "/events", label: "Events" },
     { to: "/contact-us", label: "Contact Us" },
     { to: "/join-us", label: "Join Us" },
-    { to: "/sign-in", label: "Sign In" },
+    { to: "/login", label: "Sign In" },
   ];
 
   if (isMobile) {

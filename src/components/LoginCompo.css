@@ -1,0 +1,96 @@
+/* LoginCompo.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.login-form {
+  width: 80.0%;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  padding: 5%;
+}
+
+.image-container {
+  width: fit-content;
+  justify-self: flex-end;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.image_signup {
+  width: 100%;
+  height: 100%;
+  justify-self: flex-end;
+  align-self: center;
+  object-fit: contain;
+}
+
+.login-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.login-form .remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.login-form button {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.login-form .socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-form .socials * {
+  cursor: pointer;
+}
+
+.remember-me-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+}
+
+.remember-me #remember {
+  align-self: center;
+  margin-bottom: 2px;
+}
+
+.toggle-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-button button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-button button:hover {
+  background-color: #333; /* Darker shade on hover */
+}
