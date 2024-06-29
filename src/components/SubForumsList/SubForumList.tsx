@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import './SubForumList.css';
-import userAvatar from '../assets/icons8-male-user-ios-17-filled-96.png';
+import userAvatar from '../../assets/icons8-male-user-ios-17-filled-96.png';
 
-// Then in your component:
-<img src={userAvatar} alt="User Avatar" />
 interface LastPost {
     text: string;
     author: string;
@@ -16,13 +14,6 @@ interface SubForum {
     topics: string[];
     icon: string;
     lastPost: LastPost;
-}
-function getSubForumsData(forum: string): SubForum[] {
-    if (!forum) {
-        return []; // Return an empty array if the forum is not found or if it's empty
-    }
-    
-    return subForumsData[forum.toLowerCase()];
 }
 
 const subForumsData: { [key: string]: SubForum[] } = {
@@ -47,56 +38,7 @@ const subForumsData: { [key: string]: SubForum[] } = {
                 date: 'Monday, 25-05-24, 10:00 AM',
             },
         },
-        {
-            name: 'Relativity',
-            topics: ['Special Relativity', 'General Relativity'],
-            icon: 'https://shorturl.at/RieBN',
-            lastPost: {
-                text: 'Theory of relativity',
-                author: 'Albert Einstein',
-                date: 'Tuesday, 26-05-24, 11:00 AM',
-            },
-        },
-        {
-            name: 'Quantum Physics',
-            topics: ['Quantum Field Theory', 'Quantum Computing'],
-            icon: 'https://shorturl.at/RieBN',
-            lastPost: {
-                text: 'Quantum computing breakthroughs',
-                author: 'Jane Doe',
-                date: 'Wednesday, 27-05-24, 9:00 AM',
-            },
-        },
-        {
-            name: 'Astronomy and Cosmology',
-            topics: ['Stars', 'Galaxies', 'Cosmology'],
-            icon: 'https://shorturl.at/RieBN',
-            lastPost: {
-                text: 'Life cycle of stars',
-                author: 'John Smith',
-                date: 'Thursday, 28-05-24, 2:00 PM',
-            },
-        },
-        {
-            name: 'Unified Field Theory',
-            topics: ['String Theory', 'M-Theory'],
-            icon: 'https://shorturl.at/RieBN',
-            lastPost: {
-                text: 'String theory explained',
-                author: 'Brian Greene',
-                date: 'Friday, 29-05-24, 1:00 PM',
-            },
-        },
-        {
-            name: 'Nuclear Physics',
-            topics: ['Fission', 'Fusion'],
-            icon: 'https://shorturl.at/RieBN',
-            lastPost: {
-                text: 'Fusion energy prospects',
-                author: 'Marie Curie',
-                date: 'Saturday, 30-05-24, 4:00 PM',
-            },
-        },
+        // More sub-forums...
     ],
     // Add other forums and their sub-forums here
 };
@@ -104,7 +46,7 @@ const subForumsData: { [key: string]: SubForum[] } = {
 const SubForumList: React.FC = () => {
     const [searchParams] = useSearchParams();
     const forum = searchParams.get('forum');
-    const subForums = subForumsData[forum!.toLowerCase()] || [];
+    const subForums = forum ? subForumsData[forum.toLowerCase()] : [];
     const [expandedItems, setExpandedItems] = useState<{ [key: string]: boolean }>({});
 
     const toggleExpand = (name: string) => {
@@ -116,9 +58,9 @@ const SubForumList: React.FC = () => {
             {forum && (
                 <>
                     <div className="header">
-                        <h1><span className="forum-label">FORUM</span>{forum.toUpperCase()}</h1>
+                        <h1><span className="forum-label">FORUM</span> {forum.toUpperCase()}</h1>
                         <p>Welcome to the world of Thinking</p>
-                        <button>SHARE THIS FORUM</button>
+                        <button className="share-button">SHARE THIS FORUM</button>
                     </div>
                     <h2>Sub Forums</h2>
                     <div className="sub-forum-list">
@@ -162,3 +104,4 @@ const SubForumList: React.FC = () => {
 };
 
 export default SubForumList;
+

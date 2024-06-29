@@ -4,8 +4,8 @@ import SearchIcon from '@mui/icons-material/Search'; // Import SearchIcon from M
 import discussionImage from '../assets/Image_Intellect_DiscussionPage.png'; // Import the image
 import DiscussionForumMain from '../components/DiscussionForumMain';
 import {Routes,Route} from 'react-router-dom';
-import SubForumList from '../components/SubForumList';
-import SubForum from '../components/subForumPage';
+import SubForumList from '../components/SubForumsList/SubForumList';
+import SubForum from '../components/subForumPage/index';
 const DiscussionForum: React.FC = () => {
   return (
   <>   
