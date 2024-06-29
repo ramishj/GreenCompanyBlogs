@@ -1,8 +1,12 @@
 import React from 'react';
 import './MissionComponent.css';
 import missionImage from '../assets/Goal.png'; // Path to your image
+import { useSearchParams } from 'react-router-dom';
 
 const MissionComponent = () => {
+  const [searchParams] = useSearchParams();
+    const forumName = searchParams.get('forumName') || '';
+    console.log(forumName)
   return (
     <div className="mission-container">
       <div className="mission-image">

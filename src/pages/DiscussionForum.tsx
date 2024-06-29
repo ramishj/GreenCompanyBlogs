@@ -3,7 +3,9 @@ import './DiscussionForum.css';
 import SearchIcon from '@mui/icons-material/Search'; // Import SearchIcon from Material-UI
 import discussionImage from '../assets/Image_Intellect_DiscussionPage.png'; // Import the image
 import DiscussionForumMain from '../components/DiscussionForumMain';
-
+import {Routes,Route} from 'react-router-dom';
+import SubForumList from '../components/SubForumList';
+import SubForum from '../components/subForumPage';
 const DiscussionForum: React.FC = () => {
   return (
   <>   
@@ -25,8 +27,13 @@ const DiscussionForum: React.FC = () => {
           <img src={discussionImage} alt="Discussion Image" className="discussion-image" />
         </div>
       </div>
+      <Routes>
+          <Route path="/" element={<DiscussionForumMain />} />
+          <Route path='/forum' element={<SubForumList />} />
+          <Route path='/forum/subForum' element={<SubForum />} />
+      </Routes>
     </div>
-    <DiscussionForumMain/>
+    
     </>
 
   );
