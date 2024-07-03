@@ -10,6 +10,7 @@ const DiscussionForum = lazy(() => import('./pages/DiscussionForum'));
 const BlogsAndArticlesPage = lazy(() => import('./pages/BlogsAndArticlesPage'));
 const EventsPage = lazy(() => import('./pages/Events'));
 const Login = lazy(() => import('./pages/Login'));
+const ProfilePage = lazy(() => import('./pages/MyProfile'));
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
               <Route path="/blogs" element={<BlogsAndArticlesPage />} />
               <Route path="/events" element={<EventsPage />} />
               <Route path="/login/*" element={<Login />} />
+              <Route path="/myProfile" element={<ProfilePage />} />
             </Routes>
           </div>
         </Suspense>
