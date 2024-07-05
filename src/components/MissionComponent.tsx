@@ -16,12 +16,12 @@ const MissionComponent = () => {
         <div className="missionConatiner">
         <h1 className="heading">OUR MISSION</h1>
         <p className="text">
-          <span className="bold-text">Al-Hikmah Discussion Forum’s mission</span> is to create a suitable environment for Muslim youth for discussions, analysis, exchange of ideas, and plans to solve the bigger problems of the future in order to lead a <span className="bold-text">GLOBAL PARADIGM SHIFT.</span>
+          <span className="bold-text"><span>Green Earth Forum’s mission</span> is to create a suitable environment for individuals to engage in discussions, analysis, exchange of ideas, and plans to solve the bigger environmental challenges of the future in order to lead a <span className="bold-text">GLOBAL ECOLOGICAL SHIFT.</span></span>
         </p></div>
         <div className="visionContainer">
         <h1 className="heading">OUR VISION</h1>
         <p className="text">
-          <span className="bold-text">Al-Hikmah Discussion Forum’s vision</span> is to connect Muslim youth of the world with each other for discussion & planning, building knowledge, skills, capability, power, expertise for the <span className="bold-text">BIG CHANGE</span> in the future in order to uplift the status of the Muslim world as leaders and torchbearers.
+        <span className="bold-text">Green Earth Forum’s vision</span> is to connect individuals around the world for discussion and planning, building knowledge, skills, capability, power, and expertise for the <span className="bold-text">BIG CHANGE</span> in the future, in order to uplift the status of global communities as leaders and stewards of the Earth.
         </p></div>
       </div>
 
@@ -29,8 +29,8 @@ const MissionComponent = () => {
 
       <div className="ayah-container">
         <div className="ayah-content">
-          <p className="ayah-text"><span className="bold-text">وَإِذْ قَالَ رَبُّكَ لِلْمَلَـٰٓئِكَةِ إِنِّى جَاعِلٌۭ فِى ٱلْأَرْضِ خَلِيفَةًۭ</span></p>
-          <p className="translation-text">When your Lord said to the angels, “I am going to place a successive ˹human˺ authority on earth.”</p>
+          <p className="ayah-text"><span className="bold-text">Some Quote  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, necessitatibus.                            </span></p>
+          <p className="translation-text">-Whoever Said it</p>
         </div>
       </div>
     </div>

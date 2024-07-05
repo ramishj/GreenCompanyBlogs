@@ -65,9 +65,9 @@ const mainForums: MainForum[] = [
 
 const hotTopics: HotTopic[] = [
     {
-        text: 'How we as Ummah can uplift ourselves in Global Politics?',
+        text: 'How we as Society can uplift ourselves in Global Politics?',
         category: 'Psychology and Sociology',
-        author: 'Mohammed Abdul Wahid',
+        author: 'Wahid',
         date: 'Monday, 24-05-24, 4:13 PM'
     },
     // Add more hot topics here

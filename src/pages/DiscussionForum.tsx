@@ -13,19 +13,19 @@ const DiscussionForum: React.FC = () => {
       <div className="top-section">
         <div className="text-container">
           <h1 className="forum-title">
-            <span className="highlight">Al Fatah</span> Discussion Forum
+            <span className="highlight">Green</span> Discussion Forum
           </h1>
           <div className="search-bar-container">
             <input type="text" className="search-bar" placeholder="Search a Topic or a Keyword" />
             <SearchIcon className="search-icon" /> {/* Use SearchIcon component */}
           </div>
           <p className="forum-description">
-            Al Hikmah Discussion Forum is established to connect Muslim Youth for discussions on various fields of expertise to become <span className="highlight">Intellectuals, Leaders</span> & <span className="highlight">Fateh of the World</span>.
+           Green Earth Forum is established to connect individuals for discussions on various fields of expertise to become <span className="highlight">Intellectuals, Leaders</span> & <span className="highlight">Guardians of the Earth</span>.
           </p>
         </div>
-        <div className="image-container">
+        {/* <div className="image-container">
           <img src={discussionImage} alt="Discussion Image" className="discussion-image" />
-        </div>
+        </div> */}
       </div>
       <Routes>
           <Route path="/" element={<DiscussionForumMain />} />

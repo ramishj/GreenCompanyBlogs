@@ -6,18 +6,18 @@ const articles = [
     title: 'Article 1',
     author: 'Author 1',
     description: 'Description of article 1.',
-    imageUrl: 'https://shorturl.at/0126e',
+    imageUrl: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   },
   {
     title: 'Article 2',
     author: 'Author 2',
     description: 'Description of article 2.',
-    imageUrl: 'https://shorturl.at/0126e',
+    imageUrl: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   },{
-    title: 'Article 2',
-    author: 'Author 2',
-    description: 'Description of article 2.',
-    imageUrl: 'https://shorturl.at/0126e',
+    title: 'Article 3',
+    author: 'Author 3',
+    description: 'Description of article 3.',
+    imageUrl: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   }
   // Rest of the articles...
 ];

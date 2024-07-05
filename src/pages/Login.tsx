@@ -20,9 +20,9 @@ const Login = () => {
         </div>
         {isLogin ? <LoginCompo /> : <SignupCompo />}
       </div>
-      <div className="image-container">
-        <img src="https://i.ibb.co/tbftjgL/Signup-image.jpg" alt="Signup" className='image_signup' />
-      </div>
+      {/* <div className="image-container">
+        <img src="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Signup" className='image_signup' />
+      </div> */}
     </div>
   );
 };

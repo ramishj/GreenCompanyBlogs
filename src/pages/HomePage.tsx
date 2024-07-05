@@ -9,11 +9,11 @@ const HomePage: React.FC = () => {
     <div className="homepage">
       <div className="content-box">
         <div className="content">
-          <div className="ayah">وَٱلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَمْرُهُمْ شُورَىٰ بَيْنَهُمْ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ</div>
-          <div className="translation">Those who respond to their Lord, establish prayer, conduct their affairs by mutual consultation, and spend from what We have provided for them.</div>
+          {/* <div className="ayah">وَٱلَّذِينَ ٱسْتَجَابُوا۟ لِرَبِّهِمْ وَأَقَامُوا۟ ٱلصَّلَوٰةَ وَأَمْرُهُمْ شُورَىٰ بَيْنَهُمْ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ</div> */}
+          <div className="translation">"Nature does not hurry, yet everything is accomplished." <br />- Lao Tzu</div>
         </div>
         <div className="mission-statement">
-          Empowering Muslim Youth Intellectually, politically & Economically to become <br></br><span className="blue-text">LEADERS</span> of the WORLD
+        "Empowering Communities Ecologically, Socially & Economically to become <br></br><span className="green-text">STEWARDS</span> of the EARTH"
         </div>
         <div className="mission-statement2">
           A Call for a <span className="blue-text">GLOBAL</span> Paradigm <span className="blue-text">SHIFT</span>

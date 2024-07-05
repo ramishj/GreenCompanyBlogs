@@ -1,6 +1,6 @@
 /* Common styles for both desktop and mobile */
 .homepage {
-  background-image: url('../assets/Quran_BG.png');
+  background-image: url('../assets/beautiful-background-td7gsxerv3ecl20h.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -45,7 +45,7 @@
 
 .content-box .translation {
   font-size: 1.5em;
-  color: #0085FF;
+  color: #101112;
   font-weight: bold;
 }
 

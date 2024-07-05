@@ -25,28 +25,28 @@ const EventsPage: React.FC = () => {
             speaker: "Abu Anwar",
             date: "05 June, 2024 / 08:30 AM - 10:00 AM",
             mode: "Online",
-            imageUrl: "https://t.ly/X5uiL",
+            imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
             timestamp: 1727981400 // Unix timestamp for 01 June, 2024 / 08:30 AM
           },
           {
             title: "Social Media Marketing and Its Trends in 2024",
             speaker: "Jamal Al Hindi",
             date: "Aug 4, 2024",
-            imageUrl: "https://t.ly/X5uiL",
+            imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
             timestamp: 1727981400 // Unix timestamp for Aug 4, 2024
           },
           {
             title: "Brand Management in Contemporary World",
             speaker: "Lina Thompson",
             date: "Aug 20, 2024",
-            imageUrl: "https://t.ly/X5uiL",
+            imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
             timestamp: 1729353000 // Unix timestamp for Aug 20, 2024
           },
           {
             title: "Explaining the Theory of Relativity and its Compatibility with Quran",
             speaker: "Dr. John Doe",
             date: "Sep 14, 2024",
-            imageUrl: "https://t.ly/X5uiL",
+            imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
             timestamp: 1731466200 // Unix timestamp for Sep 14, 2024
           }
         ]

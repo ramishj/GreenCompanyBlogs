@@ -9,19 +9,19 @@ const EventsPage: React.FC = () => {
       <div className="top-section">
         <div className="text-container">
           <h1 className="forum-title">
-            <span className="highlight">Al Fatah</span> Events Zone
+            <span className="highlight">Green Company</span> Events Zone
           </h1>
           <div className="search-bar-container">
             <input type="text" className="search-bar" placeholder="Search for Events" />
             <SearchIcon className="search-icon" /> {/* Use SearchIcon component */}
           </div>
           <p className="forum-description">
-            Al Fatah Events Zone is established to connect Muslim Youth for discussions on various fields of expertise to become <span className="highlight">Intellectuals, Leaders</span> & <span className="highlight">Fateh of the World</span>.
+          Green Earth Forum is established to connect individuals for discussions on various fields of expertise to become <span className="highlight">Intellectuals, Leaders</span> & <span className="highlight">Guardians of the Earth</span>
           </p>
         </div>
-        <div className="image-container">
+        {/* <div className="image-container">
           <img src={discussionImage} alt="Discussion Image" className="discussion-image" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

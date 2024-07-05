@@ -25,13 +25,14 @@ const ProfilePage: React.FC = () => {
         title: "6 Strategies to Find Your Conference Keynote and Other Speakers",
         content: "1 ndasnfionofsdoifnsdionfkjsdnfndifhnsdiobndpjofb...",
         link: "#"
-      },{
-        id: 1,
+      },
+      {
+        id: 2,
         title: "6 Strategies to Find Your Conference Keynote and Other Speakers",
         content: "1 ndasnfionofsdoifnsdionfkjsdnfndifhnsdiobndpjofb...",
         link: "#"
-      }
-      // ... more posts
+      },
+      // Add more posts as needed
     ],
   };
 
@@ -72,13 +73,23 @@ const ProfilePage: React.FC = () => {
             </ul>
           </section>
 
-          
+          <section className="topics-started">
+            <h2>Topics you Started</h2>
+            {userData.posts.map(post => (
+              <article key={post.id} className="topic">
+                <img src={userData.profileImage} alt="Profile" className="profile-image-small" />
+                <div className="topic-content">
+                  <p className="topic-category">Entrepreneurship</p>
+                  <h3>{post.title}</h3>
+                  <a href="#" className="link-blue">Check out topic</a>
+                </div>
+              </article>
+            ))}
+          </section>
         </aside>
 
         <main className="main-content">
-            
-        <section className="create-post">
-            
+          <section className="create-post">
             <h2>Post Something</h2>
             <div className="post-buttons">
               <button className="btn-primary">Choose your Topic First</button>
@@ -94,34 +105,22 @@ const ProfilePage: React.FC = () => {
                 <i className="material-icons">send</i> Send
               </button>
             </div>
-          
           </section>
 
           <section className="user-posts">
             <h2>Your Posts</h2>
-            {userData.posts.map(post => (
-              <article key={post.id} className="post">
-                <img src={userData.profileImage} alt="Profile" className="profile-image-small" />
-                <div className="post-content">
-                  <h3>{post.title}</h3>
-                  <p>{post.content}</p>
-                  <a href={post.link} className="link-blue">check out replies</a>
-                </div>
-              </article>
-            ))}
-          </section>
-          <section className="topics-started">
-            <h2>Topics you Started</h2>
-            {userData.posts.map(post => (
-              <article key={post.id} className="topic">
-                <img src={userData.profileImage} alt="Profile" className="profile-image-small" />
-                <div className="topic-content">
-                  <p className="topic-category">Entrepreneurship  Speaking Skills</p>
-                  <h3>{post.title}</h3>
-                  <a href="#" className="link-blue">Check out topic</a>
-                </div>
-              </article>
-            ))}
+            <div className="scrollable-container">
+              {userData.posts.map(post => (
+                <article key={post.id} className="post">
+                  <img src={userData.profileImage} alt="Profile" className="profile-image-small" />
+                  <div className="post-content">
+                    <h3>{post.title}</h3>
+                    <p>{post.content}</p>
+                    <a href={post.link} className="link-blue">check out replies</a>
+                  </div>
+                </article>
+              ))}
+            </div>
           </section>
         </main>
       </div>

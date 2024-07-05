@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="about-us">
-            <h2>Alhikmah</h2>
+            <h2>Green Company</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa porro et eveniet, eaque aperiam repudiandae nisi molestias, sequi minima id est nam blanditiis voluptates temporibus animi, pariatur excepturi nesciunt voluptatem.</p>
           </div>
           <div className="footer-menu">

@@ -13,30 +13,30 @@ interface InsightItem {
 
 const initialInsightsData: InsightItem[] = [
   {
-    image: 'https://shorturl.at/0126e',
+    image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: '6 Strategies to Find Your Conference Keynote and Other Speakers',
     description: 'Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Booketboks. Hanya perlu mengikuti beberapa langkah mudah.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Technology'
   },
   {
-    image: 'https://shorturl.at/0126e',
+    image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'How Successfully Used Paid Marketing to Drive Incremental Ticket Sales',
     description: 'Sekarang, kamu bisa produksi tiket fisik untuk eventmu bersama Booketboks. Hanya perlu mengikuti beberapa langkah mudah.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Marketing'
   },
   {
-    image: 'https://shorturl.at/0126e',
+    image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'New Insight Title 2',
     description: 'Description for the new insight item 2.',
     date: '14 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Health'
   }
   // Add more initial insights as needed
@@ -44,30 +44,30 @@ const initialInsightsData: InsightItem[] = [
 
 const moreInsightsData: InsightItem[] = [
   {
-    image: 'https://shorturl.at/0126e',
+    image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'New Insight Title 1',
     description: 'Description for the new insight item 1.',
     date: '13 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Business'
   },
   {
-    image: 'https://shorturl.at/0126e',
+    image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'New Insight Title 2',
     description: 'Description for the new insight item 2.',
     date: '14 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Health'
   },
   {
-    image: 'https://shorturl.at/0126e',
+    image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     title: 'New Insight Title 2',
     description: 'Description for the new insight item 2.',
     date: '14 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Health'
   }
   // Add more items as needed

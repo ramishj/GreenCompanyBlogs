@@ -20,12 +20,12 @@ interface TrendingItem {
 }
 
 const spotlightData: SpotlightItem = {
-  image: 'https://shorturl.at/0126e',
+  image: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   title: 'How can people stop any War happening in the world?',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sodales, nisl eget facilisis ullamcorper, dolor arcu gravida nisl, in suscipit ligula magna sit amet elit.',
   date: '12 Mar',
   writer: 'Ramish',
-  writerProfilePic: 'https://shorturl.at/0126e'
+  writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
 };
 
 interface TrendingItem {
@@ -43,7 +43,7 @@ const trendingData: TrendingItem[] = [
     description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Marketing' // Example category
   },
   {
@@ -51,14 +51,14 @@ const trendingData: TrendingItem[] = [
     description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Technology' // Example category
   },{
     title: 'Social Media Marketing and its trends in 2024',
     description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Marketing' // Example category
   },
   {
@@ -66,14 +66,14 @@ const trendingData: TrendingItem[] = [
     description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Technology' // Example category
   },{
     title: 'Social Media Marketing and its trends in 2024',
     description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Marketing' // Example category
   },
   {
@@ -81,14 +81,14 @@ const trendingData: TrendingItem[] = [
     description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Technology' // Example category
   },{
     title: 'Social Media Marketing and its trends in 2024',
     description: 'How to Ace the Social Media in just few steps. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Marketing' // Example category
   },
   {
@@ -96,7 +96,7 @@ const trendingData: TrendingItem[] = [
     description: 'How to leverage technology for economic growth. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     date: '12 Mar',
     writer: 'Ramish',
-    writerProfilePic: 'https://shorturl.at/0126e',
+    writerProfilePic: 'https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     category: 'Technology' // Example category
   },
   // Add more trending items as needed
@@ -111,7 +111,7 @@ const BlogsAndArticlesPage: React.FC = () => {
         <span className="highlight">Blogs and </span>Articles
         </h1>
         <p className="page-subtitle">
-          Explore our precious reports, blogs and articles to increase your knowledge prepared by Industry leaders and Experts and Influential Muslim Personalities.
+          "Explore our insightful reports, blogs, and articles to enhance your knowledge, prepared by industry leaders, experts, and influential environmentalists."
         </p>
       </header>
 
