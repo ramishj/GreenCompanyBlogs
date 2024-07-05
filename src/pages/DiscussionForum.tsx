@@ -23,9 +23,7 @@ const DiscussionForum: React.FC = () => {
            Green Earth Forum is established to connect individuals for discussions on various fields of expertise to become <span className="highlight">Intellectuals, Leaders</span> & <span className="highlight">Guardians of the Earth</span>.
           </p>
         </div>
-        {/* <div className="image-container">
-          <img src={discussionImage} alt="Discussion Image" className="discussion-image" />
-        </div> */}
+        
       </div>
       <Routes>
           <Route path="/" element={<DiscussionForumMain />} />

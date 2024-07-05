@@ -3,9 +3,9 @@ import './MyProfile.css';
 
 const ProfilePage: React.FC = () => {
   const userData = {
-    name: "Junaid Al Hindi",
-    username: "@junaid_al_hindi123",
-    email: "junaidalhindi@gmail.com",
+    name: "Test",
+    username: "@test",
+    email: "test@test.com",
     profileImage: "https://via.placeholder.com/150",  // Generic user icon
     coverImage: "https://via.placeholder.com/600x200",  // Generic cover image
     topicsStarted: 223,
@@ -17,7 +17,7 @@ const ProfilePage: React.FC = () => {
     university: "MIT, Meerut",
     department: "Engineering",
     course: "B Tech CSE",
-    contactNumber: "+91 9845253642",
+    contactNumber: "+91 77777777",
     age: 19,
     posts: [
       {
