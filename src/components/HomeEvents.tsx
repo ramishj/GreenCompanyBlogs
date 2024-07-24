@@ -22,7 +22,7 @@ const EventsPage: React.FC = () => {
         events: [
           {
             title: "Digital Marketing Webinar",
-            speaker: "Abu Anwar",
+            speaker: "Ramish Jamal",
             date: "05 June, 2024 / 08:30 AM - 10:00 AM",
             mode: "Online",
             imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
@@ -30,7 +30,7 @@ const EventsPage: React.FC = () => {
           },
           {
             title: "Social Media Marketing and Its Trends in 2024",
-            speaker: "Jamal Al Hindi",
+            speaker: "Jamal",
             date: "Aug 4, 2024",
             imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
             timestamp: 1727981400 // Unix timestamp for Aug 4, 2024
